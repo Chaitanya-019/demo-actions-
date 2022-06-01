@@ -24,12 +24,6 @@ jobs:
           ignore-unfixed: true
           format: 'json'
 #           output: 'trivy-results.json'
-
-#       - name: uploading the json as an artifact
-#         uses: actions/upload-artifact@v3.1.0
-#         with:
-#           name: my-artifact
-#           path: my-artifact.json
   uploading-artifact:
     name: uploading artifacts
     runs-on: ubuntu-latest
