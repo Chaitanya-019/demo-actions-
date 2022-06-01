@@ -29,8 +29,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: git difference
-        run: |
-          git diff
+        run: git log
   Visualising-files:
     name: viewing path and files
     runs-on: ubuntu-latest
