@@ -24,8 +24,10 @@ jobs:
           ignore-unfixed: true
           format: 'json'
           output: 'trivy-results.json'
-      - name: viewing the files
+      - name: viewing the current directory
         run: pwd
+      - name: viewing the files
+        run: ls
         
   
           
