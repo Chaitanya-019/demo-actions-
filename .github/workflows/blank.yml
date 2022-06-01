@@ -25,14 +25,28 @@ jobs:
           format: 'json'
 #           output: 'trivy-results.json'
 
-      - name: uploading the json as an artifact
-        uses: actions/upload-artifact@v3.1.0
+#       - name: uploading the json as an artifact
+#         uses: actions/upload-artifact@v3.1.0
+#         with:
+#           name: my-artifact
+#           path: my-artifact.json
+  uploading-artifact:
+    name: uploading artifacts
+    runs-on: ubuntu-latest
+    needs: trivy-scan
+    steps:
+      - name: creating folder
+        run: mkdir downloads
+      - name: creating files
+        run: | 
+          cd downloads
+          echo: 'hello' hello.json
+          cd ..
+      - name: upolading artifact
+        uses: actions/checkout@v2
         with:
           name: my-artifact
-          path: my-artifact.json
+          path: downloads
+          
+      
 
-#       - name: Upload Trivy scan results to GitHub Security tab
-#         uses: github/codeql-action/upload-sarif@v1
-#         with:
-#           sarif_file: 'trivy-results.sarif'
-#           path: travis-results.sarif
