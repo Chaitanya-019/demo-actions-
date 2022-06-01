@@ -15,6 +15,8 @@
         "drewm/mailchimp-api": "^2.1",
         "bacon/bacon-qr-code": "1.0.3",
         "watson/rememberable": "^3",
-        "chaitanya": "0.1",
+        "chaitanya": "3.2.4",
+        "razorpay/intern" : "412.32",
+        "razorpay/intern2" : "412.32",
     },
 }
