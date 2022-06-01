@@ -7,23 +7,24 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-#       - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
       - name: Run a one-line script
         run: pwd
       - name: files
         run: ls
-#   git-commands:
-#     name: using git
-#     runs-on: ubuntu-latest
-#     needs: build
-#     steps:
-#       - name: git configurations
-#         run: |
-#           git config user.name "GitHub Actions Bot"
-#           git config user.email "<>"
-#       - name: git commits
-#         run: |
-#           git log
+  git-commands:
+    name: using git
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: git configurations
+        run: |
+          git config user.name "git hub actions"
+          git config user.email "betha.chaitanya19@gmail.com"
+      - name: git commits
+        run: |
+          git commit -m "initial commit"
+          git log
   
           
       
