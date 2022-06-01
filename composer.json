@@ -15,6 +15,6 @@
         "drewm/mailchimp-api": "^2.1",
         "bacon/bacon-qr-code": "1.0.3",
         "watson/rememberable": "^3",
-        "chaitanya": "0.1.2",
+        "chaitanya": "0.1",
     },
 }
