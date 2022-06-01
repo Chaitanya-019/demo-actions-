@@ -14,7 +14,7 @@ jobs:
         run: ls
       - name: git configurations
         run: |
-         `git --version
+          git --version
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
           git status
