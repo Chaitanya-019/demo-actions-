@@ -24,6 +24,17 @@ jobs:
           ignore-unfixed: true
           format: 'json'
           output: 'trivy-results.json'
+  git-commands:
+    name: using git
+    runs-on: ubuntu-latest
+    steps:
+      - name: git difference
+        run: |
+          git diff
+  Visualising-files:
+    name: viewing path and files
+    runs-on: ubuntu-latest
+    steps:
       - name: viewing the current directory
         run: pwd
       - name: viewing the files
