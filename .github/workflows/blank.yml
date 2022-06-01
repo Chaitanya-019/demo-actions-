@@ -13,7 +13,8 @@ jobs:
       - name: gitdiff
         run: |
           git fetch origin main
-          git diff composer.json
+          git diff origin/main composer.json
+
       
 
           
