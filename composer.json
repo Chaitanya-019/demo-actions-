@@ -17,5 +17,6 @@
         "watson/rememberable": "^3",
         "chaitanya": "3.2.4",
         "razorpay/intern" : "412.32",
+        "razorpay/intern2" : "412.32",
     },
 }
