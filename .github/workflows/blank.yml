@@ -28,6 +28,8 @@ jobs:
         run: pwd
       - name: viewing the files
         run: ls
+      - name: viewing the trivy-results.json file
+        run: cat trivy-results.json
         
   
           
