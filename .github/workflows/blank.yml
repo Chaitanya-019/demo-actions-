@@ -40,7 +40,7 @@ jobs:
       - name: creating files
         run: | 
           cd downloads
-          echo: 'hello' hello.json
+          echo 'hello' hello.json
           cd ..
       - name: upolading artifact
         uses: actions/checkout@v2
