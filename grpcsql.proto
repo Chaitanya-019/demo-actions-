@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package sql;
+option go_package = "sqlpb";
+
+message Company{
+    string ID = 1;
+    string Name = 2;
+    string Creator =3;
+}
+
+message CompanyName{
+    string Name = 1;
+}
+
+message CompanyId {
+    string ID=1;
+}
+
+message CompanyCreator{
+    string Creator = 1;
+}
+
+service SqlService {
+    rpc GetCompanyById (CompanyId) returns (Company){};
+}
+

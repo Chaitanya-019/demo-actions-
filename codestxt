@@ -1,0 +1,5 @@
+source C:/Users/hp/Desktop/Go/GRPC_SQL/database/companyTable.sql
+
+go mod tidy
+
+protoc sqlpb/grpcsql.proto --gogo_out=plugins=grpc:.
