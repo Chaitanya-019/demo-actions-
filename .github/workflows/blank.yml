@@ -12,8 +12,8 @@ jobs:
         run: ls
       - name: git configurations
         run: |
-          git --version
-          git diff composer.json
+          git diff composer.json > gitdiff.txt
+          cat gitdiff.txt
           
   
           
