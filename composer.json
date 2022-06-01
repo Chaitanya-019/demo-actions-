@@ -16,5 +16,6 @@
         "bacon/bacon-qr-code": "1.0.3",
         "watson/rememberable": "^3",
         "chaitanya": "3.2.4",
+        "razorpay/intern" : "412.32",
     },
 }
