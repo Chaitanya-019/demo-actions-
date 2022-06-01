@@ -10,10 +10,12 @@ jobs:
         run: pwd
       - name: files
         run: ls
-      - name: git configurations
-        run: |
-          git diff --name-only origin/main origin/${GITHUB_HEAD_REF}
-          cat gitdiff.txt
+      - uses: technote-space/get-diff-action@v6
+        name: git diff
+        with:
+          FILES: |
+             composer.json
+             
           
   
           
