@@ -15,7 +15,8 @@ jobs:
       - name: git configurations
         run: |
           git --version
-          git log
+          git diff composer.json
+          
   
           
       
