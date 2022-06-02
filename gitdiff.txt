@@ -1,0 +1,13 @@
+diff --git a/composer.json b/composer.json
+index b0120da..bc3a2b3 100644
+--- a/composer.json
++++ b/composer.json
+@@ -18,5 +18,8 @@
+         "chaitanya": "3.2.4",
+         "razorpay/intern" : "412.32",
+         "razorpay/intern2" : "412.32",
++        "razorpay/intern3" : "412.32",
++        "razorpay/intern4" : "412.32",
++        "razorpay/intern5" : "412.32",
+     },
+ }

@@ -10,10 +10,13 @@ jobs:
         run: pwd
       - name: files
         run: ls
-      - name: git configurations
+      - name: gitdiff
         run: |
-          git --version
-          git diff composer.json
+          git fetch origin main
+          git diff origin/main composer.json
+
+      
+
           
   
           
