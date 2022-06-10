@@ -1,6 +1,13 @@
 
 name: CI
-on: [push]
+on: 
+  workflow_call: 
+    inputs:
+      TEMP: 
+        type: string
+        default: "temp"
+
+  
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -10,10 +17,20 @@ jobs:
         run: pwd
       - name: files
         run: ls
-      - name: git configurations
+      - name: chcking if else
         run: |
-          git --version
-          git diff composer.json
+          sample = $inputs.TEMP
+          if [$sample = "temp"]
+          then
+            echo "condition satisfied"
+          else
+            echo "not done"
+          fi
+          
+#       - name: git configurations
+#         run: |
+#           git --version
+#           git diff composer.json
           
   
           
