@@ -1,11 +1,6 @@
 
 name: CI
-on: 
-  workflow_call: 
-    inputs:
-      TEMP: 
-        type: string
-        default: "temp"
+on: [push]
 
   
 jobs:
@@ -19,7 +14,7 @@ jobs:
         run: ls
       - name: chcking if else
         run: |
-          sample = $inputs.TEMP
+          sample = "hello"
           if [$sample = "temp"]
           then
             echo "condition satisfied"
