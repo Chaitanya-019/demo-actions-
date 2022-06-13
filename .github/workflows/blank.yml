@@ -12,15 +12,19 @@ jobs:
         run: pwd
       - name: files
         run: ls
-      - name: chcking if else
+      - name: path
         run: |
-          $sample = "hello"
-          if [$sample = "temp"]
-          then
-            echo "condition satisfied"
-          else
-            echo "not done"
-          fi
+          pwd
+          echo pwd
+#       - name: chcking if else
+#         run: |
+#           $sample = "hello"
+#           if [$sample = "temp"]
+#           then
+#             echo "condition satisfied"
+#           else
+#             echo "not done"
+#           fi
           
 #       - name: git configurations
 #         run: |
