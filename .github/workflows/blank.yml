@@ -2,6 +2,8 @@
 name: CI
 on: [push]
 
+env:
+  GITHUB_ACTIONS: true
   
 jobs:
   build:
