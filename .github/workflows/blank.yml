@@ -18,7 +18,12 @@ jobs:
           echo pwd
       - name: environmental variable
         run: |
-          $env.GITHUB_ACTION_PATH
+          if $env.GITHUB_ACTIONS
+          then
+            echo inside githubactions
+          else
+            echo outside githubactions
+          fi
 #       - name: chcking if else
 #         run: |
 #           $sample = "hello"
