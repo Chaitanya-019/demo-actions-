@@ -30,6 +30,9 @@ jobs:
             echo outside githubactions
           fi
           
+      - name: returning of github actions
+        run: |
+          echo "GITHUB_ACTIONS: ${GITHUB_ACTIONS}"
 #       - name: git configurations
 #         run: |
 #           git --version
