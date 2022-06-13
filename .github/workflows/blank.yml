@@ -23,7 +23,7 @@ jobs:
           echo pwd
       - name: environmental variable
         run: |
-          if $env.GITHUB_ACTIONS
+          if $env.GITHUB_ACTIONS == "true"
           then
             echo inside githubactions
           else
