@@ -12,7 +12,7 @@ jobs:
         run: pwd
       - name: new file creation
         run: |
-          hello >> new.txt
+          "hello" >> new.txt
       - name: files
         run: ls
       - name: path
@@ -27,15 +27,6 @@ jobs:
           else
             echo outside githubactions
           fi
-#       - name: chcking if else
-#         run: |
-#           $sample = "hello"
-#           if [$sample = "temp"]
-#           then
-#             echo "condition satisfied"
-#           else
-#             echo "not done"
-#           fi
           
 #       - name: git configurations
 #         run: |
