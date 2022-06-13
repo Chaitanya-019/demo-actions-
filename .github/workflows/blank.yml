@@ -12,7 +12,7 @@ jobs:
         run: pwd
       - name: new file creation
         run: |
-          "hello" >> new.txt
+          touch new.txt
       - name: files
         run: ls
       - name: path
